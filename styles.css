@@ -1,0 +1,208 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body and Background */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(20, 20, 20);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navigation */
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    padding: 1rem;
+    display: flex;
+    justify-content: center; /* Center navigation */
+    z-index: 10;
+  }
+  
+  nav {
+    display: flex; /* Horizontal layout */
+  }
+  
+  .nav-link {
+    color: #ccc;
+    font-size: 1.1rem;
+    margin: 0 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .tab-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-link:hover .tab-icon {
+    transform: scale(1.1);
+  }
+  
+  .nav-link:hover {
+    color: #fff;
+  }
+  
+  .discord-icon {
+    color: #7289DA;
+    font-size: 1.3rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .discord-icon:hover .tab-icon {
+    transform: scale(1.2);
+  }
+  
+/* Main Section */
+   .main-section {
+    text-align: center;
+    margin-top: 6rem; /* Adjust to prevent overlap with fixed header */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+    color: #f3f3f3;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .description {
+    font-size: 1.4rem;
+    color: #bbb;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .scroll-button {
+    background: linear-gradient(90deg, #ff5f6d, #ffc371);
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .scroll-button:hover {
+    background: linear-gradient(90deg, #ffc371, #ff5f6d);
+    transform: scale(1.05);
+  }
+  
+  /* Download Section */
+  .download-section {
+    padding: 4rem 2rem;
+    text-align: center; /* Center text */
+    margin-top: 2rem;
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  .image-templates {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+  
+  .feature-image {
+    width: 150px; /* Normal size */
+    height: 150px; /* Normal size */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .download-button {
+    background: linear-gradient(90deg, #ff5f6d, #ffc371);
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .download-button:hover {
+    background: linear-gradient(90deg, #ffc371, #ff5f6d);
+    transform: scale(1.05);
+  }
+  
+  /* Fun Facts Section */
+  .fun-facts {
+    padding: 4rem 2rem;
+    text-align: right; /* Align text to the right */
+    position: fixed; /* Keep it in a fixed position while scrolling */
+    right: 0;
+    top: 100px; /* Position it below the header */
+    width: 300px; /* Adjust width */
+    animation: fadeIn 0.5s ease-in-out; /* Add tween effect */
+  }
+  
+  .fact {
+    margin: 1rem 0;
+    transform: rotate(-10deg); /* Tilted text */
+    transition: transform 0.5s ease; /* Tween effect on hover */
+  }
+  
+  .fact:hover {
+    transform: rotate(0deg); /* Reset tilt on hover */
+  }
+  
+  /* Features Section */
+  .features-section {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .features-section ul {
+    list-style: none;
+    font-size: 1.3rem;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .features-section li {
+    margin: 0.5rem 0;
+  }
+  
+  /* Tween Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Death.gg</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <header>
+    <nav>
+      <a href="#home" class="nav-link" onclick="scrollToSection('home')">
+        <img src="Assets/home-icon.png" alt="Home" class="tab-icon"> Home
+      </a>
+      <a href="#download" class="nav-link" onclick="scrollToSection('download')">
+        <img src="Assets/download-icon.png" alt="Download" class="tab-icon"> Download
+      </a>
+      <a href="#features" class="nav-link" onclick="scrollToSection('features')">
+        <img src="Assets/features-icon.png" alt="Features" class="tab-icon"> Features
+      </a>
+      <a href="https://discord.gg/VWG3ctss" target="_blank" class="discord-icon">
+        <img src="Assets/discord-icon.png" alt="Discord" class="tab-icon"> Discord
+      </a>
+    </nav>
+  </header>
+
+  <!-- Main Section -->
+  <section id="home" class="main-section">
+    <h1>Death.gg</h1>
+    <p class="description">Death.gg has been in the works for many years, but finally, we have released the best Discord free tool for top-tier Raiders like yourself.</p>
+    <button class="scroll-button" onclick="scrollToSection('download')">
+      <img src="Assets/arrow-icon.png" alt="Arrow" class="button-icon"> Get Death.gg
+    </button>
+  </section>
+
+  <!-- Download Section -->
+  <section id="download" class="download-section">
+    <h2>Download Death.gg</h2>
+    <div class="image-templates">
+      <img src="Assets/placeholder1.png" alt="Feature Image 1" class="feature-image">
+      <img src="Assets/placeholder1.png" alt="Feature Image 2" class="feature-image">
+    </div>
+    <button class="download-button">
+      <img src="Assets/download-icon.png" alt="Download" class="button-icon"> Download
+    </button>
+  </section>
+
+  <!-- Fun Facts Section -->
+  <section class="fun-facts">
+    <h2>Fun Facts</h2>
+    <p class="fact">Did you know? Death.gg is designed for top-tier Raiders.</p>
+    <p class="fact">Fun fact: Our tool has been tested by professional raiders!</p>
+    <p class="fact">Cool fact: We're constantly updating our features based on user feedback!</p>
+    <p class="fact">Trivia: The name 'Death.gg' comes from a desire to empower users.</p>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features-section">
+    <h2>Features</h2>
+    <ul>
+      <li>Customizable raids</li>
+      <li>Automatic Discord integration</li>
+      <li>User-friendly dashboard</li>
+      <li>24/7 support</li>
+      <li>Top-tier encryption for safety</li>
+    </ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
